@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Water Rafting - Contact Us</title>
+    <link rel="stylesheet" href="rafting.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-info">
+            <h1>Contact Us</h1>
+            <p>Address: 123 Main St, Harare, Zimbabwe</p>
+            <p>Phone: +263 123 456 789</p>
+            <p>Email: [info@whitewaterrafting.com](mailto:info@whitewaterrafting.com)</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d-122.0840514846814!3d37.38534807929493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02425a6d1d%3A0x6c367be8f3e6c5!2sWhitewater+Rafting!5e0!3m2!1sen!2sus!4v1563474551354!5m2!1sen!2sus" width="600" height="450" style="border:0" allowfullscreen></iframe>
+        </section>
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="profile">
+                <img src="employee1.jpg" alt="Employee 1">
+                <p>John Doe, CEO</p>
+            </div>
+            <div class="profile">
+                <img src="employee2.jpg" alt="Employee 2">
+                <p>Jane Smith, Marketing Manager</p>
+            </div>
+            <div class="profile">
+                <img src="employee3.jpg" alt="Employee 3">
+                <p>Bob Johnson, Operations Manager</p>
+            </div>
+        </section>
+        <section class="contact-form">
+            <h2>Get in Touch</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="purpose">Purpose:</label>
+                <input type="radio" id="general" name="purpose" value="general">
+                <label for="general">General Inquiry</label>
+                <input type="radio" id="reservation" name="purpose" value="reservation">
+                <label for="reservation">Reservation Question</label>
+                <input type="radio" id="website" name="purpose" value="website">
+                <label for="website">Website Suggestion</label><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="10" cols="30"></textarea><
