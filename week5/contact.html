@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Whitewater Rafting</title>
+    <meta name="description" content="Get in touch with us for inquiries about our rafting services, location, and more.">
+    <link rel="stylesheet" href="rafting.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Whitewater Rafting</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+        <!-- Company Information -->
+        <section>
+            <h3>Company Information</h3>
+            <p><strong>Address:</strong> 123 River Rd, Rafting Town, Zimbabwe</p>
+            <p><strong>Phone:</strong> <a href="tel:+263775923207">+263 775 923 207</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a></p>
+            <div>
+                <h4>Our Location</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d28.0613886846814!3d-17.82505697975969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x193380b769f67a3d%3A0x29aec99b42aa9a1!2sVictoria%20Falls!5e0!3m2!1sen!2szw!4v1643723904307!5m2!1sen!2szw" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+        <!-- Employee Profiles -->
+        <section>
+            <h3>Meet Our Team</h3>
+            <div class="employee">
+                <img src="john-doe.jpg" alt="John Doe">
+                <p>John Doe - Rafting Guide</p>
+            </div>
+            <div class="employee">
+                <img src="ngonidzaishe-chareka.jpg" alt="Ngonidzaishe Chareka">
+                <p>Ngonidzaishe Chareka - Safety Officer</p>
+            </div>
+            <div class="employee">
+                <img src="mike-johnson.jpg" alt="Mike Johnson">
+                <p>Mike Johnson - Tour Manager</p>
+            </div>
+        </section>
+        <!-- Contact Form -->
+        <section>
+            <h3>Send Us a Message</h3>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label>Purpose of Message:</label>
+                <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                <label for="general">General Inquiry</label>
+                <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                <label for="reservation">Reservation Question</label>
+                <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                <label for="suggestion">Website Suggestion</label>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Whitewater Raft
