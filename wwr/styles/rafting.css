@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #2A4D6E;
+    --secondary-color: #3A7D44;
+    --accent-color: #FFA630;
+    --neutral-color: #E8E9EB;
+    --heading-font: 'Roboto Condensed', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    width: 200px;
+}
+
+nav a {
+    color: var(--neutral-color);
+    text-decoration: none;
+    margin-left: 25px;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+.hero {
+    position: relative;
+    margin: 25px 0;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 166, 48, 0.8);
+    padding: 15px;
+    color: white;
+    font-family: var(--heading-font);
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background: rgba(232, 233, 235, 0.9);
+    padding: 15px;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 15px;
+    border-radius: 4px;
+}
+
+.history {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: var(--neutral-color);
+    border-radius: 8px;
+}
+
+.adventures {
+    margin-bottom: 40px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid var(--secondary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--neutral-color);
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.socialmedia a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 30px;
+    transition: transform 0.3s;
+}
+
+.socialmedia img:hover {
+    transform: scale(1.1);
+}
