@@ -193,3 +193,52 @@ footer p {
     margin-left: 0;
   }
 }
+
+contact-info, .contact-form, .employee-profiles {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--neutral-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #e59400;
+}
+
+footer a {
+  color: var(--neutral-color);
+  text-decoration: underline;
+  margin-top: 10px;
+}
