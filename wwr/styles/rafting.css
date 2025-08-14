@@ -168,7 +168,7 @@ main{max-width:var(--max-width);margin:28px auto;padding:0 20px}
 .history, .adventures, .team {margin:20px 0}
 .gallery{display:flex;gap:12px;flex-wrap:wrap}
 .gallery figure{flex:1 1 calc(33% - 12px);text-align:center}
-.gallery img{width:100%;height:150px;object-fit:cover;border-radius:8px}
+.gallery img{width: 150px;%;height: 200px;px;px;object-fit:cover;border-radius:8px}
 
 /* contact page */
 .contact-info{display:grid;grid-template-columns:1fr 1fr;gap:18px}
