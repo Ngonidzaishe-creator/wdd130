@@ -6,8 +6,8 @@ body {
 }
 
 header {
-  background: #004d40;
-  color: #fff;
+  background: #29dabc;
+  color: #37ac98;
   padding: 1rem;
   text-align: center;
 }
@@ -21,7 +21,7 @@ nav ul {
 }
 
 nav a {
-  color: #fff;
+  color: #383232;
   text-decoration: none;
 }
 
@@ -33,12 +33,12 @@ nav a.active {
   text-align: center;
   padding: 2rem;
   background: url('images/hero.jpg') no-repeat center/cover;
-  color: #fff;
+  color: #531ad6;
 }
 
 .btn {
   background: #ff9800;
-  color: #fff;
+  color: #c4a80d;
   padding: 0.5rem 1rem;
   text-decoration: none;
   border-radius: 5px;
