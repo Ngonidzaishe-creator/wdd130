@@ -1,0 +1,333 @@
+:root {
+    --primary-color: #055a05;
+    --secondary-color: #f4a261;
+    --accent1-color: #264653;
+    --accent2-color: #e9c46a;
+
+    --heading-font: "Georgia", "Times New Roman", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+
+/* ================================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   BODY
+================================ */
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   PAGE WIDTH
+================================ */
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+header {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+
+    background-color: var(--primary-color);
+    color: white;
+
+    padding: 15px;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+
+
+/* ================================
+   HEADINGS
+================================ */
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+/* ================================
+   BASIC ELEMENTS
+================================ */
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+    position: relative;
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* ================================
+   HERO TITLE
+================================ */
+
+.hero h1 {
+    position: absolute;
+
+    top: 20px;
+    width: 100%;
+
+    padding: 16px;
+
+    text-align: center;
+
+    opacity: 0.85;
+
+    background-color: var(--accent1-color);
+    color: #ffffff;
+}
+
+
+/* ================================
+   HERO ARTICLE
+================================ */
+
+.hero article {
+    position: absolute;
+
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+
+    background-color: rgba(38, 70, 83, 0.9);
+
+    color: white;
+
+    padding: 15px;
+
+    overflow: auto;
+}
+
+.hero article p {
+    color: white;
+}
+
+.hero article img {
+    float: right;
+
+    width: 125px;
+    height: auto;
+
+    margin-left: 15px;
+    margin-bottom: 10px;
+
+    border: 3px solid white;
+}
+
+
+/* ================================
+   HISTORY SECTION
+================================ */
+
+main > section {
+    padding: 20px;
+
+    background-color: #f4f4f4;
+
+    border-radius: 8px;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+main > section p {
+    text-align: center;
+}
+
+
+/* ================================
+   ADVENTURE SECTION
+================================ */
+
+main > section:last-child {
+    background-color: var(--accent2-color);
+}
+
+main > section:last-child h2 {
+    margin-bottom: 0;
+}
+
+
+/* ================================
+   SOCIAL MEDIA
+================================ */
+
+.socialmedia {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 15px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 35px;
+    height: 35px;
+
+    display: block;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--primary-color);
+
+    color: white;
+
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media screen and (max-width: 900px) {
+
+    header,
+    main,
+    footer {
+        width: 100%;
+    }
+
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    header img {
+        margin: 0 auto;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero article {
+        position: relative;
+
+        bottom: auto;
+        left: auto;
+        right: auto;
+
+        margin: 0;
+    }
+
+    .hero h1 {
+        position: relative;
+
+        top: auto;
+
+        font-size: 1.8rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .socialmedia {
+        justify-content: center;
+    }
+}
